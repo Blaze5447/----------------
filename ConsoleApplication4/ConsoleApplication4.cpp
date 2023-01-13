@@ -24,7 +24,7 @@ void mail::reg(int k)
     filout.open("C:\\Desktop\\registration.txt", ios::app | ios::binary);
     if (!filout)
     {
-        cout << "\nОшибка!\n";
+    
     }
     else
     {
@@ -43,15 +43,15 @@ int main()
     int t;
     cout << "\nВведите регистрационные данные для пользователя 1 :: \n";
     obj[0].reg(0);
-    cout << "\nВведите регистрационные данные для пользователя 1 :: \n";
+    cout << "\nВведите регистрационные данные для пользователя 2 :: \n";
     obj[1].reg(1);
-    cout << "\nВведите регистрационные данные для пользователя 1 :: \n";
+    cout << "\nВведите регистрационные данные для пользователя 3 :: \n";
     obj[2].reg(2);
 
     mail obj2;
 
     ifstream filein;
-    filein.open("C:\\1\\registration.txt", ios::in | ios::binary);
+    filein.open("C:\\Desktop\\registration.txt", ios::in | ios::binary);
     if (!filein)
     {
         cout << "\nНевозможно открыть файл\n";
